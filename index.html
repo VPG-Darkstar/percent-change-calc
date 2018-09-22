@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculate Percent Change</title>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3/semantic.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/main.css">
+</head>
+<body>
+	<div id="nav" class="ui fixed red inverted menu">
+        <div class="ui container">
+            <div id="logo" class="header item">
+                <i class="percent icon"></i> ChangeCalc
+            </div>
+            <div class="item right active">Home</div>
+	    </div>
+	</div>
+
+	<div class="ui main text container sticky-wrap">
+		<div class="ui centered grid">
+			<div id="calcBox" class="ui red center aligned segment">
+				<div class="ui header">Percent Change Calculator</div>
+				<form class="ui form large segment">
+					<div class="ui fluid labeled input">
+						<label for="value1Input" class="ui red label">
+							<em>V1</em> = 
+						</label>
+						<input id="value1Input" type="number" name="value1" required>
+					</div>
+
+					<div class="ui fluid labeled input">
+						<label for="value2Input" class="ui red label">
+							<em>V2</em> = 
+						</label>
+						<input id="value2Input" type="number" name="value2" required>
+					</div>
+
+					<div class="ui hidden divider"></div>
+
+					<div class="container">
+						$${(V2 - V1) \over |V1|} * 100 = Percent Change$$
+					</div>
+
+					<div class="ui hidden divider"></div>
+
+					<div class="ui fluid right labeled input">
+						<input id="percentOutput" type="number" name="percent" disabled>
+						<div class="ui basic label disabled">
+							%
+						</div>
+					</div>
+
+					<div class="ui hidden divider"></div>
+
+					<button id="calculate" class="ui red button" type="button">Calculate</button>
+					<button id="clear" class="ui red inverted button" type="action">Clear</button>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<div id="footer" class="ui fixed footer">
+		<div class="ui center aligned container">
+  			<div class="ui horizontal divided list">
+  				<div class="list item">Copyright 2018 - Evan Choquette</div>
+  				<div class="list item">Created using <a class="ui inverted" href="https://semantic-ui.com/">Semantic UI</a></div>
+		    </div>
+		</div>
+	</div>
+
+
+	<!-- JavaScript -->
+	<script type="text/javascript" src="assets/js/main.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3/semantic.min.js"></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
+</body>
+</html>

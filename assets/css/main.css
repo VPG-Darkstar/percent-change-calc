@@ -1,0 +1,44 @@
+body {
+	background: #E0EAFC;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #CFDEF3, #E0EAFC);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #CFDEF3, #E0EAFC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.sticky-wrap{
+	display: flex;
+	flex-direction: column;
+	min-height: 90%;
+}
+
+.input {
+	margin-bottom: 1.0em;
+}
+
+.container.main {
+    padding: 6.0em 0;
+}
+
+.ui.form.segment {
+	padding: 2.0em;
+	background: #f7f7f7;
+}
+
+#nav {
+	box-shadow: 0 1px 8px 2px rgba(0,0,0,0.2),
+				0 3px 12px 4px rgba(0,0,0,0.1),
+				0 7px 20px 12px rgba(0,0,0,0.05);
+}
+
+#footer {
+	padding: 2.0em 0;
+}
+
+#logo {
+    font-size: 1.2em;
+}
+
+#calcBox {
+	box-shadow: 0 3px 10px 3px rgba(0,0,0,0.1),
+				0 8px 18px 7px rgba(0,0,0,0.05),
+				0 15px 30px 15px rgba(0,0,0,0.01);
+}
