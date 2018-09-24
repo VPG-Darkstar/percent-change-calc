@@ -6,15 +6,17 @@
 	<link rel="stylesheet" type="text/css" href="assets/css/main.css">
 </head>
 <body>
+	<!-- Navbar -->
 	<div id="nav" class="ui fixed red inverted menu">
         <div class="ui container">
             <div id="logo" class="header item">
-                <i class="percent icon"></i> ChangeCalc
+                <a class="hvr-icon-bounce" href="index.html"><i class="percent icon hvr-icon"></i>ChangeCalc</a>
             </div>
-            <div class="item right active">Home</div>
+            <div class="item right active"><a href="index.html">Home</a></div>
 	    </div>
 	</div>
 
+	<!-- Main -->
 	<div class="ui main text container sticky-wrap">
 		<div class="ui centered grid">
 			<div id="calcBox" class="ui red center aligned segment">
@@ -22,14 +24,14 @@
 				<form class="ui form large segment">
 					<div class="ui fluid labeled input">
 						<label for="value1Input" class="ui red label">
-							<em>V1</em> = 
+							<em>V<sub>1</sub></em> = 
 						</label>
 						<input id="value1Input" type="number" name="value1" required>
 					</div>
 
 					<div class="ui fluid labeled input">
 						<label for="value2Input" class="ui red label">
-							<em>V2</em> = 
+							<em>V<sub>2</sub></em> = 
 						</label>
 						<input id="value2Input" type="number" name="value2" required>
 					</div>
@@ -37,12 +39,15 @@
 					<div class="ui hidden divider"></div>
 
 					<div class="container">
-						$${(V2 - V1) \over |V1|} * 100 = Percent Change$$
+						$${(V_2 - V_1) \over |V_1|} * 100 = Percent Change$$
 					</div>
 
 					<div class="ui hidden divider"></div>
 
 					<div class="ui fluid right labeled input">
+						<label for="percentOutput" class="ui red label">
+							<em>Ans</em> = 
+						</label>
 						<input id="percentOutput" type="number" name="percent" disabled>
 						<div class="ui basic label disabled">
 							%
@@ -58,10 +63,11 @@
 		</div>
 	</div>
 
+	<!-- Footer -->
 	<div id="footer" class="ui fixed footer">
 		<div class="ui center aligned container">
   			<div class="ui horizontal divided list">
-  				<div class="list item">Copyright 2018 - Evan Choquette</div>
+  				<div class="list item">Copyright 2018 <a class="ui inverted" href="https://www.linkedin.com/in/evan-choquette-92347731/">Evan Choquette</a></div>
   				<div class="list item">Created using <a class="ui inverted" href="https://semantic-ui.com/">Semantic UI</a></div>
 		    </div>
 		</div>
